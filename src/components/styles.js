@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Sheet = styled.div`
   display: grid;
-  vertical-align: middle;
   grid-template-columns: 32px repeat(
       ${props => props.numberOfColumns - 1},
       90px
