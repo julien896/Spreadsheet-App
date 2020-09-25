@@ -1,15 +1,16 @@
-import React from 'react';
-import './App.css';
-import Table from './components/Table'
+import React from "react";
+import './App.css'
+import { Reset } from "styled-reset";
 
-function App() {
+import Sheet from "./components/Sheet";
+
+const App = () => {
   return (
     <>
-    <div style={{ width: 'max-content' }}>
-    <Table x={10} y={10} />
-    </div>
+      <Reset />
+      <Sheet numberOfRows={10} numberOfColumns={10} />
     </>
   );
-}
+};
 
 export default App;
